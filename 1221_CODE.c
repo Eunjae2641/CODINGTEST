@@ -50,3 +50,39 @@ char* solution(int num) {
         answer = "Odd";
     return answer;
 }
+
+//자릿수 더하기
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+int solution(int n) {
+    int answer = 0;
+    for(int i=1; n!=0; i++){
+        answer = answer + (n%10);
+        n = n/10;
+    }
+    return answer;
+}
+
+//하샤드 수
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+bool solution(int x) {
+
+    int sum = 0;
+    int x1 = x;
+    bool answer = true;
+    
+    for(int i=1; x1!=0; i++){
+        sum = sum + (x1%10);
+        x1 = x1/10;
+    }
+
+    if(x%sum!=0){
+        answer = false;
+    }
+    return answer;
+}
