@@ -112,3 +112,19 @@ int solution(long long num) {
     printf("%d", answer);
         return answer;
 }
+
+//직사각형 별찍기
+#include <stdio.h>
+
+int main(void) {
+    int a;
+    int b;
+    scanf("%d %d", &a, &b);
+    for(int i = b; i>0; i--){
+        for(int j=a; j>0; j--){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
