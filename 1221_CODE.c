@@ -35,3 +35,18 @@ double solution(int arr[], size_t arr_len) {
     answer = sum / arr_len;
     return answer;
 }
+
+//짝수와 홀수
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+char* solution(int num) {
+        char* answer = (char*)malloc(sizeof(int));
+    if(num%2==0){
+        answer = "Even";
+    }
+    else
+        answer = "Odd";
+    return answer;
+}
