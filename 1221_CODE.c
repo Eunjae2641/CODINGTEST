@@ -86,3 +86,29 @@ bool solution(int x) {
     }
     return answer;
 }
+
+//콜라츠 추측
+    #include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+int solution(long long num) {
+         int answer = 0;
+        for(int i=0; num!=1; i++){
+            if(num%2==0){
+                num = num / 2;
+                answer++;
+            }
+            else{
+                num = (num*3)+1;
+                answer++;
+            }
+            
+            if(i>=500){
+                answer = -1;
+                break;
+            }
+        }
+    printf("%d", answer);
+        return answer;
+}
