@@ -27,3 +27,18 @@ long long solution(int w, int h) {
     }
     return answer;
 }
+
+//수박수박수박수박
+function solution(n) {
+    // let su = '수';
+    // let park = '박';
+    let watermelon = '';
+    for (let i = 0; i < n; i++ ) {
+        if (watermelon === '' || watermelon.endsWith('박') ) {
+            watermelon = watermelon + '수';
+        } else {
+            watermelon = watermelon + '박';
+        }
+    }
+    return watermelon;
+}
